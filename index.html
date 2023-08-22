@@ -4,26 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <!-- Inclui um arquivo CSS para estilização -->
     <title>Snake Game | Dev Guilherme AJS</title>
   </head>
   <body>
     <div class="wrapper">
+      <!-- Container principal -->
       <div class="game-details">
+        <!-- Seção para exibir detalhes do jogo -->
         <span class="score">Score: 0</span>
+        <!-- Exibe a pontuação atual do jogador -->
         <span class="high-score">High Score: 0</span>
+        <!-- Exibe a pontuação máxima -->
       </div>
       <div class="play-board"></div>
+      <!-- Área de jogo onde a cobra e a comida são exibidas -->
       <div class="controls">
-        <i data-key='ArrowLeft' class="fa-solid fa-arrow-left-long"></i>
-        <i data-key='ArrowUp' class="fa-solid fa-arrow-up-long"></i>
-        <i data-key='ArrowRight' class="fa-solid fa-arrow-right-long"></i>
-        <i data-key='ArrowDown' class="fa-solid fa-arrow-down-long"></i>
+        <!-- Seção de controles para a cobra -->
+        <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+        <!-- Botão de direção esquerda -->
+        <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+        <!-- Botão de direção cima -->
+        <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+        <!-- Botão de direção direita -->
+        <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+        <!-- Botão de direção baixo -->
       </div>
     </div>
     <script src="scrip.js"></script>
+    <!-- Inclui o arquivo JavaScript para a lógica do jogo -->
     <script
       src="https://kit.fontawesome.com/4bdbb4169f.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Inclui o kit de ícones FontAwesome -->
   </body>
 </html>

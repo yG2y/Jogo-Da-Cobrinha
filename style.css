@@ -1,74 +1,88 @@
+/* Define um estilo básico para todos os elementos, zerando margens, preenchimentos e considerando a caixa de borda */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos para o corpo do documento */
 body {
+  /* Configurações para centralizar vertical e horizontalmente o conteúdo */
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  background-color: rgb(144, 200, 250);
+  min-height: 100vh; /* Define a altura mínima da viewport */
+  background-color: rgb(144, 200, 250); /* Define a cor de fundo */
 }
 
+/* Estilos para o contêiner principal */
 .wrapper {
-  width: 65vmin;
-  height: 70vmin;
+  width: 65vmin; /* Define a largura do contêiner principal como 65% da viewport */
+  height: 70vmin; /* Define a altura do contêiner principal como 70% da viewport */
   display: flex;
   overflow: hidden;
   flex-direction: column;
   justify-content: center;
-  background: #293447;
-  border-radius: 5px;
-  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.5);
+  background: #293447; /* Define a cor de fundo do contêiner */
+  border-radius: 5px; /* Define o raio das bordas */
+  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.5); /* Adiciona uma sombra à caixa */
 }
 
+/* Estilos para os detalhes do jogo */
 .game-details {
-  color: #b8c6dc;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 20px 27px;
-  display: flex;
-  justify-content: space-between;
+  color: #b8c6dc; /* Define a cor do texto */
+  font-weight: 500; /* Define a espessura da fonte */
+  font-size: 1.2rem; /* Define o tamanho da fonte */
+  padding: 20px 27px; /* Define o preenchimento interno */
+  display: flex; /* Configurações para exibir como flex */
+  justify-content: space-between; /* Espaço entre os elementos internos */
 }
 
+/* Estilos para a área de jogo */
 .play-board {
-  height: 100%;
-  width: 100%;
-  display: grid;
-  background: #5a6d8e;
-  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+  height: 100%; /* Preenche 100% da altura do contêiner */
+  width: 100%; /* Preenche 100% da largura do contêiner */
+  display: grid; /* Exibe como uma grade */
+  background: #5a6d8e; /* Define a cor de fundo da área de jogo */
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr); /* Define a grade de células para o tabuleiro */
 }
 
+/* Estilos para a cabeça da cobra */
 .play-board .head {
-  background: #55647b;
+  background: #55647b; /* Define a cor de fundo da cabeça da cobra */
 }
+
+/* Estilos para a comida */
 .play-board .food {
-  background: #9d4444;
+  background: #9d4444; /* Define a cor de fundo da comida */
 }
 
+/* Estilos para os controles */
 .controls {
-  display: none;
-  justify-content: space-between;
+  display: none; /* Oculta os controles inicialmente */
+  justify-content: space-between; /* Espaço entre os botões */
 }
 
+/* Estilos para os ícones de controle */
 .controls i {
-  padding: 25px 0;
-  text-align: center;
-  font-size: 1.3rem;
-  color: #637592;
-  width: calc(100% / 4);
-  cursor: pointer;
-  border-right: 1px solid #121925;
-  transition: 0.5s;
+  padding: 25px 0; /* Espaçamento interno vertical nos botões */
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.3rem; /* Define o tamanho da fonte */
+  color: #637592; /* Define a cor do ícone */
+  width: calc(100% / 4); /* Divide a largura igualmente entre os botões */
+  cursor: pointer; /* Mostra o cursor ao passar por cima */
+  border-right: 1px solid #121925; /* Adiciona uma borda à direita dos botões */
+  transition: 0.5s; /* Define a transição para animações suaves */
 }
 
+/* Efeito de hover nos ícones de controle */
 .controls i:hover {
-  background-color: #5a6d8e;
+  background-color: #5a6d8e; /* Define a cor de fundo ao passar o mouse */
 }
 
+/* Estilos para telas menores */
 @media screen and (max-width: 800px) {
+  /* Modificações de estilo para telas menores */
   .wrapper {
     width: 90vmin;
     height: 115vmin;
@@ -80,7 +94,7 @@ body {
   }
 
   .controls {
-    display: flex;
+    display: flex; /* Mostra os controles */
   }
 
   .controls i {
